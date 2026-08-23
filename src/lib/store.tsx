@@ -60,7 +60,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   const login = useCallback((email: string, name?: string) => {
     setUser({
-      name: name || email.split("@")[0].replace(/[._]/g, " ") || "Nomad",
+      name: name || email.split("@")[0]?.replace(/[._]/g, " ") || "Nomad",
       email,
       plan: "Explorer",
       avatar: "https://i.pravatar.cc/160?img=15",
