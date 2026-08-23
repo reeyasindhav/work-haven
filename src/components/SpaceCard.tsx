@@ -81,7 +81,7 @@ export function SpaceCard({
             <span className="text-muted-foreground"> / day</span>
           </p>
           <Button size="sm" asChild className="rounded-full px-4">
-            <Link to="/spaces/$spaceId/book" params={{ spaceId: space.id }}>
+            <Link to="/book/$spaceId" params={{ spaceId: space.id }}>
               Book now
             </Link>
           </Button>
