@@ -9,9 +9,9 @@ Add animations to the site, and please provide a simple user flow in the respons
 
 Do not generate images; just use open-source images where needed
 
-Project description: A platform where remote workers discover and book coworking spaces,  cafes and work-friendly spots globally.
+Project description: A platform where remote workers discover and book coworking spaces, cafes and work-friendly spots globally.
 
-Design ideas: Clean, productive aesthetic, map-based space finder, amenity filter tags, workspace photo galleries, hot desk booking flow. 
+Design ideas: Clean, productive aesthetic, map-based space finder, amenity filter tags, workspace photo galleries, hot desk booking flow.
 
 Problem Statement:
 

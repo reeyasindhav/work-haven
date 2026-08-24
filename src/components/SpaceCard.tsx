@@ -32,7 +32,7 @@ export function SpaceCard({
             src={space.images[0]}
             alt={space.name}
             loading="lazy"
-            className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="animate-image size-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
         </Link>
         <span className="eyebrow absolute top-3 left-3 rounded-full bg-background/90 px-3 py-1.5 backdrop-blur">
@@ -69,7 +69,10 @@ export function SpaceCard({
 
         <div className="mt-3 flex flex-wrap gap-1.5">
           {space.amenities.slice(0, 3).map((a) => (
-            <span key={a} className="rounded-md bg-secondary px-2 py-1 text-xs text-secondary-foreground">
+            <span
+              key={a}
+              className="rounded-md bg-secondary px-2 py-1 text-xs text-secondary-foreground"
+            >
               {a}
             </span>
           ))}

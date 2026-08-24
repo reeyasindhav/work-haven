@@ -4,7 +4,7 @@ import { Leaf } from "lucide-react";
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-sand">
-      <div className="mx-auto grid max-w-[1400px] gap-10 px-5 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-[1400px] gap-10 px-5 py-14 md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] lg:px-8">
         <div>
           <div className="flex items-center gap-2.5">
             <span className="flex size-8 items-center justify-center rounded-xl bg-primary text-primary-foreground">
@@ -18,18 +18,29 @@ export function SiteFooter() {
           </p>
         </div>
         <FooterCol
-          title="Discover"
-          items={[
-            { to: "/explore", label: "Explore spaces" },
-            { to: "/how-it-works", label: "How it works" },
-            { to: "/pricing", label: "Pricing" },
-          ]}
-        />
-        <FooterCol
           title="Hosts"
           items={[
             { to: "/list-your-space", label: "List your space" },
             { to: "/dashboard", label: "Host dashboard" },
+          ]}
+        />
+        <FooterCol
+          title="Company"
+          items={[
+            { to: "/about", label: "About" },
+            { to: "/contact", label: "Contact" },
+            { to: "/support", label: "Support" },
+            { to: "/blog", label: "Blog" },
+            { to: "/careers", label: "Careers" },
+            { to: "/reviews", label: "Reviews" },
+          ]}
+        />
+        <FooterCol
+          title="Legal"
+          items={[
+            { to: "/privacy", label: "Privacy policy" },
+            { to: "/terms-of-use", label: "Terms of use" },
+            { to: "/cookies", label: "Cookie policy" },
           ]}
         />
         <FooterCol
@@ -51,13 +62,7 @@ export function SiteFooter() {
   );
 }
 
-function FooterCol({
-  title,
-  items,
-}: {
-  title: string;
-  items: { to: string; label: string }[];
-}) {
+function FooterCol({ title, items }: { title: string; items: { to: string; label: string }[] }) {
   return (
     <div>
       <h4 className="eyebrow text-muted-foreground">{title}</h4>

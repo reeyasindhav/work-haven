@@ -461,18 +461,54 @@ export const REVIEWS = [
     role: "Product designer · Bengaluru",
     text: "I planned three weeks in Lisbon around Treehouse. Every space I booked had the wifi speed it promised — that alone was worth it.",
     avatar: "https://i.pravatar.cc/120?img=47",
+    rating: 5,
+    space: "Second Home Lisboa",
+    date: "2026-08-18",
   },
   {
     name: "Tom H.",
     role: "Backend engineer · Berlin",
     text: "The noise rating is the killer feature. I filter to Silent, book a phone booth, and my standups stop being embarrassing.",
     avatar: "https://i.pravatar.cc/120?img=12",
+    rating: 5,
+    space: "Heden Graça",
+    date: "2026-08-12",
   },
   {
     name: "Sofia M.",
     role: "Freelance writer · Mexico City",
     text: "Booking a café desk for five euros for the afternoon feels absurd in the best way. No more buying three coffees out of guilt.",
     avatar: "https://i.pravatar.cc/120?img=32",
+    rating: 5,
+    space: "Casa Tabacalera",
+    date: "2026-08-05",
+  },
+  {
+    name: "Lena V.",
+    role: "Designer · Barcelona",
+    text: "Atico Bailen’s rooftop alone is worth the day pass. I had calls in the meeting room and deep work in the hot desk area.",
+    avatar: "https://i.pravatar.cc/120?img=9",
+    rating: 5,
+    space: "Aticco Bailèn",
+    date: "2026-07-28",
+  },
+  {
+    name: "Kenji S.",
+    role: "Founder · Tokyo",
+    text: "Midori Desk feels like the calmest place in Nakameguro. Consistent speed, great light, and the standing desks actually work.",
+    avatar: "https://i.pravatar.cc/120?img=53",
+    rating: 4,
+    space: "Midori Desk",
+    date: "2026-07-20",
+  },
+  {
+    name: "Ana L.",
+    role: "Marketing · Mexico City",
+    text: "Treehouse removed the guesswork from café hunting. I trusted the reviews, booked instantly, and worked better.",
+    avatar: "https://i.pravatar.cc/120?img=25",
+    rating: 5,
+    space: "Casa Tabacalera",
+    date: "2026-07-14",
   },
 ];
 
@@ -482,3 +518,105 @@ export const SLOTS = [
   { id: "full", label: "Full day", time: "09:00 – 18:00", factor: 1 },
   { id: "evening", label: "Evening", time: "18:00 – 22:00", factor: 0.45 },
 ];
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  author: string;
+  date: string;
+  readTime: string;
+  category: string;
+  image: string;
+}
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "how-to-find-the-perfect-coworking-space",
+    title: "How to find the perfect coworking space for deep focus",
+    excerpt:
+      "A practical guide to choosing a workspace that matches your work style, from noise levels to coffee quality.",
+    content:
+      "Finding the right coworking space isn't just about aesthetics. Start by identifying your ideal noise level — silent for deep focus, low hum for collaboration. Check wifi speeds, power outlet density, and whether the space offers phone booths or meeting rooms. Visit during your actual working hours to test the vibe. Finally, read recent reviews from other remote workers to catch any hidden issues.",
+    author: "Marta Ribeiro",
+    date: "2026-08-20",
+    readTime: "5 min read",
+    category: "Guides",
+    image:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    slug: "remote-work-mistakes-to-avoid",
+    title: "7 remote work mistakes to avoid in your first month",
+    excerpt:
+      "From irregular hours to ignoring ergonomics, here are the pitfalls new remote workers should watch out for.",
+    content:
+      "Your first month of remote work can set the tone for your entire career. Avoid working from bed, maintain a consistent schedule, invest in a good chair, and set clear boundaries with housemates. Don't skip lunch breaks, and make sure you have a dedicated workspace. Finally, prioritize communication with your team — absence of visibility can hurt your career growth.",
+    author: "Tom H.",
+    date: "2026-08-15",
+    readTime: "4 min read",
+    category: "Productivity",
+    image:
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    slug: "best-cafes-for-remote-work-in-lisbon",
+    title: "The best cafés for remote work in Lisbon",
+    excerpt:
+      "Our top picks for cafés with fast wifi, great coffee, and a productive atmosphere in Lisbon.",
+    content:
+      "Lisbon has become a remote work hub, and its café scene is part of the reason. The Folks Café in Alfama offers filter coffee on tap and outlets under every seat. Estufa Botânica in Príncipe Real is a greenhouse café with the quietest terrace in the neighborhood. For a riverside breeze, try The Riverside Room in Belém — just avoid the afternoon tourist rush.",
+    author: "João Aguiar",
+    date: "2026-08-10",
+    readTime: "6 min read",
+    category: "City guides",
+    image:
+      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    slug: "how-to-stay-productive-while-traveling",
+    title: "How to stay productive while traveling",
+    excerpt:
+      "Tips and routines for remote workers who want to explore the world without sacrificing output.",
+    content:
+      "Traveling while working requires structure. Stick to your core hours, book workspaces in advance, and keep a portable toolkit — noise-cancelling headphones, a compact keyboard, and a universal adapter. Use time-blocking to separate work from exploration, and always have a backup internet plan. The goal is to work hard and explore hard.",
+    author: "Sofia M.",
+    date: "2026-08-05",
+    readTime: "5 min read",
+    category: "Productivity",
+    image:
+      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    slug: "coworking-vs-cafe-which-is-right-for-you",
+    title: "Coworking vs café: which is right for you?",
+    excerpt:
+      "Compare the benefits of dedicated coworking spaces and cafés to decide where you work best.",
+    content:
+      "Coworking spaces offer reliable wifi, ergonomic seating, meeting rooms, and a professional community. Cafés provide atmosphere, caffeine, and a change of scenery, but can be noisy and have limited seating. If you need consistency and focus, choose coworking. If you thrive on ambient energy and short work sessions, cafés are ideal. Many remote workers use both depending on the day.",
+    author: "Lena Vogt",
+    date: "2026-07-28",
+    readTime: "4 min read",
+    category: "Guides",
+    image:
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    slug: "the-ultimate-packing-list-for-digital-nomads",
+    title: "The ultimate packing list for digital nomads",
+    excerpt: "Everything you need to pack for a life on the road without the baggage.",
+    content:
+      "Pack light but smart. Start with a durable backpack, noise-cancelling headphones, a compact laptop stand, and a portable charger. Bring a universal adapter, a few essential cables, and minimal clothing that mixes and matches. Don't forget a reusable water bottle and a compact notebook. The goal is to carry only what you truly need and buy or borrow the rest locally.",
+    author: "Kenji Sato",
+    date: "2026-07-20",
+    readTime: "3 min read",
+    category: "Lifestyle",
+    image:
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
+  },
+];
+
+export const getBlogPost = (slug: string) => BLOG_POSTS.find((p) => p.slug === slug);
+
+export const BLOG_CATEGORIES = ["All", ...Array.from(new Set(BLOG_POSTS.map((p) => p.category)))];

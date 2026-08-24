@@ -70,11 +70,7 @@ export function MapPanel({
           params={{ spaceId: active.id }}
           className="animate-fade-up absolute bottom-16 left-1/2 z-30 flex w-[min(320px,88%)] -translate-x-1/2 gap-3 rounded-2xl border border-border bg-card p-3 shadow-lift"
         >
-          <img
-            src={active.images[0]}
-            alt=""
-            className="size-20 shrink-0 rounded-xl object-cover"
-          />
+          <img src={active.images[0]} alt="" className="size-20 shrink-0 rounded-xl object-cover" />
           <div className="min-w-0">
             <p className="truncate text-sm font-semibold">{active.name}</p>
             <p className="text-xs text-muted-foreground">{active.neighborhood}</p>
